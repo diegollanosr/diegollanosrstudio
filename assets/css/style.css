@@ -578,28 +578,31 @@ textarea.formularioInput{
 	color:  #295afa;
 }
 
-/* modo oscuro*/
-    /* .dark{
-        --color--background: var(--color-gris);
-        --img-modoOscuro: url(../imagenes/sun.jpg) no-repeat center;
-        --sombra-modoOscuro: 0 0 15px 8px #f0db2080;
-        --color-rojo: #b42020;
-        --color-azul: #0f6de7;
-        --color-azul-transparente: #4d77d162;
-        --color--texto: var(--color-blanco);
-        --color--navselec: var(--color-azul);
-        --img-inmowasi: url(../imagenes/logos/inmowasi_white.png) no-repeat center;
-        --img-coficont: url(../imagenes/logos/coficont_iso_blanco.png) no-repeat center;
-        --color--background-resaltado: var(--color-azul-oscuro);
-        background-color: var(--color--background);
-        --color--targets: var(--color-dorado);
-        --border--targets: 2px solid var(--color--targets);
-    } */
 /* Responsividad para telefonos*/
 @media screen and (max-width: 1000px) {
    .contenedor_navegacion{
     width: 85%;
    }
+   .contacto{
+        height: auto;
+        gap: 25px;
+    }
+    .targetContacto{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 2em 0;
+    }
+    .informacionContacto{
+        /* width: 100%; */
+        border-right: none;
+        border-bottom:2px solid var(--color-rojo) ;
+        gap: 1.5em;
+        padding-bottom: 2em;
+    }
+    .imgContacto{
+        min-width: 250px;
+        width: 50%;
+    }
 }
 @media screen and (max-width: 850px){
     .contenedor_navegacion{
@@ -616,6 +619,10 @@ textarea.formularioInput{
         width: 90%;
         gap: 10px;
         text-align: justify;
+    }
+    .imgContacto{
+        min-width: auto;
+        width: 70%;
     }
 }
 @media screen and (max-width: 750px) {
@@ -684,4 +691,16 @@ textarea.formularioInput{
         height: 200px;
     }
 
+}
+@media screen and (max-width: 400px) {
+    .infoImportante{
+        text-align: left;
+    }
+    .formularioContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion_nombre{
+        display: none;
+    }
 }
