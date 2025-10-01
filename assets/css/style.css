@@ -630,8 +630,9 @@ textarea.formularioInput{
         position: fixed;
         background: var(--color-gris);
         bottom: 3%;
-        right: 15%;
-        width: 70%;
+        right: 5%;
+        width: 90%;
+        gap: initial;
         height: 80px;
         border-radius: 50px;
         justify-content: space-around;
@@ -702,5 +703,8 @@ textarea.formularioInput{
     }
     .navegacion_nombre{
         display: none;
+    }
+    .footer{
+        height: calc(20vh + 80px )
     }
 }
