@@ -1,0 +1,205 @@
+.ocultar{
+    display: none;
+}
+.mostrar_mockup{
+    width: 100%;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.regresar{
+    width: 90%;
+    height: 50px;
+    background: var(--color-rojo);
+    border-radius: 15px;
+    color: var(--color--background);
+    font-size: 25px;
+    border: 2px solid var(--color-rojo);
+    font-weight: bold;
+}
+.regresar:hover{
+    background: var(--color--background);
+    color: var(--color-rojo);
+}
+.otros_mockups{
+    display: flex;
+    max-width: 90%;
+    gap: 20px;
+    background: var(--color-azul);
+    border: 15px solid var(--color-azul);
+    border-radius: 15px;
+    overflow: auto;
+    max-height: 300px;
+    align-items: center;
+}
+.otros_mockups_img{
+    max-width: 150px;
+    max-height: 150px;
+    width: 17vw;
+    height: 17vw;
+    min-width: 130px;
+    min-height: 130px;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    background-size: contain;
+    border: 3px solid var(--color-rosado);
+    margin-bottom: 8px;
+}
+.otros_mockups_img:hover{
+    border-color: var(--color-dorado);
+    background-color: #f5e5be;
+}
+/* .otros_mockups_img:first-child{
+    display: none;
+} */
+.contenedor_mockup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: calc(83vh - 560px);
+}
+.nombre_mockup_visualizado .subtitulo{
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+.nombre_mockup_visualizado{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--color-blanco);
+}
+.discleimer{
+    font-size: clamp(18px, 1.2vw, 35px);
+    max-width: 60vw;
+    width: 95%;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+.logo_seleccionado{
+    width: 9vw;
+    height: 9vw;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    background-size: contain;
+    border: 3px solid var(--color-rosado);
+}
+.lista_mockup{
+    column-count: 4;
+    gap: 8px;
+    padding: 25px 10px;
+    transition: all 0.5s ease;
+}
+.lista_mockup_1{
+    display: flex;
+    grid-template-columns: auto;
+}
+.lista_mockup_2{
+    max-width: 1276px;
+    column-count: 2;
+    gap: 15px;
+    align-items: center;
+    padding: 0 10%;
+}
+.lista_mockup_img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    break-inside: avoid;
+    max-height: 1000px;
+}
+/* 
+.lista_mockup_1:hover > :not(:hover), 
+*/
+.lista_mockup_2:hover > :not(:hover),
+.lista_mockup:hover > :not(:hover){
+    filter: blur(2px);
+    opacity: 0.6;
+}
+.lista_mockup_img:hover{
+    transform: scale(1.05);
+} 
+
+.lista_mockup_1 .lista_mockup_img{
+    width: 40vw;
+    max-height: 32vw;
+    margin: auto;
+}
+.lista_mockup_2 .lista_mockup_img{
+    max-height: 450px;
+    width: auto;
+    margin: auto;
+} 
+@media screen and (min-width: 2500px) {
+    .otros_mockups{
+        max-height: 320px;
+    }
+    .otros_mockups_img{
+        max-width: 290px;
+        max-height: 290px;
+    }
+    .lista_mockup{
+        column-count: 5;
+    }
+    .lista_mockup_1 .lista_mockup_img,
+    #listamockuplogo_gisslop .lista_mockup_img{
+        max-height: 20vw;
+    }
+    #listamockuplogo_gisslop {
+        max-width: 75%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .lista_mockup{
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 960px) {
+    .lista_mockup_1{
+        grid-template-columns: auto;
+    }
+    .lista_mockup_1 .lista_mockup_img{
+        width: 75%;
+        max-height: 400px;
+    }
+    .lista_mockup_2{
+        padding: 0;
+        columns: 1;
+    }
+    .lista_mockup_2 .lista_mockup_img{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .lista_mockup{
+        column-count: 2;
+    }
+    .nombre_mockup_visualizado{
+        flex-direction: column;
+    }
+    .discleimer{
+        max-width: 95%;
+    }
+    
+    .lista_mockup_1 .lista_mockup_img{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .lista_mockup{
+        padding: 20px 10px;
+        column-count: initial;
+    }
+    .lista_mockup_1 .lista_mockup_img{
+        width: 95%;
+    }
+}

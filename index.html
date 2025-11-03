@@ -12,7 +12,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="./assets/imagenes/logos/logodlr.svg">
     <script src="https://kit.fontawesome.com/5829234c9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_mockup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,7 @@
             <nav class="nevegacion">
                 <ul class="navegacion_ul">
                     <li class="navegacion_li">
-                        <a class="navegacion_link mostrar" href="#inicio">
+                        <a id="boton_inicio" class="navegacion_link mostrar" href="#inicio">
                             <i class="fa-solid fa-house navegacion_icon"></i>
                             <span class="navegacion_nombre">
                                 Inicio
@@ -38,7 +39,7 @@
                         </a>
                     </li>
                     <li class="navegacion_li">
-                        <a class="navegacion_link" href="#servicios">
+                        <a id="boton_servicios" class="navegacion_link" href="#servicios">
                             <i class="fa-solid fa-hand-holding-dollar navegacion_icon"></i>
                             <span class="navegacion_nombre">
                                 Servicios
@@ -46,7 +47,7 @@
                         </a>
                     </li>
                     <li class="navegacion_li">
-                        <a class="navegacion_link" href="#proyectos">
+                        <a id="boton_proyectos" class="navegacion_link" href="#proyectos">
                             <i class="fa-solid fa-pen-ruler navegacion_icon"></i>
                             <span class="navegacion_nombre">
                                 Proyectos
@@ -54,7 +55,7 @@
                         </a>
                     </li>
                     <li class="navegacion_li">
-                        <a class="navegacion_link" href="#contacto">
+                        <a id="boton_contacto" class="navegacion_link" target="_blank" href="https://wa.me/message/TU5QLECZNAOZA1">
                             <i class="fa-solid fa-comments navegacion_icon"></i>
                             <span class="navegacion_nombre">
                                 Contacto
@@ -74,7 +75,7 @@
                 <p class="inicio_parrafo">
                     Te ayudamos a ordenar, optimizar y potencia tu emprendimiento de manera estrategica
                 </p>
-                
+
                 <a href="https://wa.me/message/TU5QLECZNAOZA1" class="inicio_boton" target="_blank">
                     <i class="fa-brands fa-whatsapp inicio_icon" aria-hidden="true"></i>
                      “Quiero saber más”
@@ -117,7 +118,7 @@
                         </h3>
                     </div>
                     <p class="concepto_target_text">
-                        Proponemos soluciones prácticas y accesibles para que tu negocio funcione mejor, reduciendo costos y maximizando resultados sin perder calidad.  
+                        Proponemos soluciones prácticas y accesibles para que tu negocio funcione mejor, reduciendo costos y maximizando resultados sin perder calidad.
                     </p>
                 </div>
                 <div class="concepto_target">
@@ -139,13 +140,13 @@
                 Servicios
             </h2>
             <p class="servicio_text">
-                Nuestra oferta de servicios está diseñada para acompañar a emprendedores y profesionales en cada etapa de su desarrollo. 
+                Nuestra oferta de servicios está diseñada para acompañar a emprendedores y profesionales en cada etapa de su desarrollo.
                 <br>
-                En el área de branding contable, creamos identidades visuales alineadas con la filosofía financiera de cada cliente, integrando logos, paletas de colores y mensajes estratégicos. 
+                En el área de branding contable, creamos identidades visuales alineadas con la filosofía financiera de cada cliente, integrando logos, paletas de colores y mensajes estratégicos.
                 <br>
-                En planificación financiera, ofrecemos asesoría personalizada en presupuestos, ahorro y estrategias de crecimiento, enfocándonos en la sostenibilidad y el orden contable. 
+                En planificación financiera, ofrecemos asesoría personalizada en presupuestos, ahorro y estrategias de crecimiento, enfocándonos en la sostenibilidad y el orden contable.
                 <br>
-                Y a través de nuestra consultoría en marketing digital, colaboramos con especialistas para ofrecer soluciones integrales que posicionen marcas de forma efectiva en el entorno online. 
+                Y a través de nuestra consultoría en marketing digital, colaboramos con especialistas para ofrecer soluciones integrales que posicionen marcas de forma efectiva en el entorno online.
                 <br>
                 Cada servicio se presenta con claridad y profesionalismo, utilizando un diseño visual atractivo y funcional que refleja nuestro compromiso con la excelencia
 
@@ -153,30 +154,36 @@
             <div class="contenedor_servicios">
                 <div class="servicio_target">
                     <i class="fa-solid fa-building-shield servicio_icon"></i>
-                    <p class="servicio_subtitulo">
-                        Branding contable
-                    </p>
-                    <p class="concepto_target_text">
-                        “Diseño de identidad alineada a tu filosofía financiera"
-                    </p>
+                    <div class="">
+                        <p class="servicio_subtitulo">
+                            Branding contable
+                        </p>
+                        <p class="concepto_target_text">
+                            <br>“Diseño de identidad alineada a tu filosofía financiera"
+                        </p>
+                    </div>
                 </div>
                 <div class="servicio_target">
                     <i class="fa-solid fa-piggy-bank servicio_icon"></i>
-                    <p class="servicio_subtitulo">
-                        Planificación financiera
-                    </p>
-                    <p class="concepto_target_text">
-                        “Presupuestos, ahorro y estrategias para crecer”
-                    </p>
+                    <div class="">
+                        <p class="servicio_subtitulo">
+                            Planificación financiera
+                        </p>
+                        <p class="concepto_target_text">
+                            <br>“Presupuestos, ahorro y estrategias para crecer”
+                        </p>
+                    </div>
                 </div>
                 <div class="servicio_target">
                     <i class="fa-solid fa-shapes servicio_icon"></i>
-                    <p class="servicio_subtitulo">
-                        Marketing digital
-                    </p>
-                    <p class="concepto_target_text">
-                         “Colaboraciones para posicionar tu marca online”
-                    </p>
+                    <div class="">
+                        <p class="servicio_subtitulo">
+                            Marketing digital
+                        </p>
+                        <p class="concepto_target_text">
+                            <br>“Colaboraciones para posicionar tu marca online”
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,104 +191,16 @@
             <h2 class="subtitulo">
                 Proyectos
             </h2>
-            <div class="proyectos_contenedor">
-                <a href="https://diegollanosr.github.io/" target="_blank" class="proyectos_target">
-                    <div class="proyectos_img logo_dlr"></div>
-                    <div class="proyecto_detalles">
-                        <h3 class="proyecto_subtitulo">
-                            Diego Llanos R.
-                        </h3>
-                        <p class="proyecto_parrafo">
-                            La reinvención comienza por uno mismo. <br> Este proyecto marcó el desarrollo integral de la identidad gráfica y narrativa de Diego Llanos R Studio, combinando marca personal y profesional en una propuesta coherente, funcional y escalable. Se diseñó el logotipo, paleta cromática, sistema visual para redes sociales, y se estructuró el portafolio digital como vitrina de servicios multidisciplinarios. El enfoque fue construir una marca que refleje orden, sensibilidad estética y liderazgo creativo, integrando diseño, comunicación y estrategia en una sola plataforma.
-                        </p>
-                    </div>
-                </a>
-                <a class="proyectos_target" href="https://coficontperu.github.io/" target="_blank">
-                    <div class="proyectos_img logo_coficont"></div>
-                    <div class="proyecto_detalles">
-                        <h3 class="proyecto_subtitulo">
-                            Coficont
-                        </h3>
-                        <p class="proyecto_parrafo">
-                            Una consultora contable y financiera que buscaba renovar su presencia digital tras un periodo de inactividad. El proyecto se centró en rediseñar la identidad visual, dotándola de mayor coherencia con su filosofía de comunicación: claridad, eficiencia y cercanía. Se desarrolló una nueva propuesta gráfica, se optimizó la estructura de su sitio web y se definieron mensajes clave para redes sociales, alineados con su enfoque estratégico. El resultado fue una marca revitalizada, con una narrativa visual que transmite confianza y profesionalismo
-                        </p>
-                    </div>
-                </a>
-                <a class="proyectos_target" href="https://www.youtube.com/@inmowasibr" target="_blank">
-                    <div class="proyectos_img logo_inmowasi"></div>
-                    <div class="proyecto_detalles">
-                        <h3 class="proyecto_subtitulo">
-                            Inmo Wasi 
-                        </h3>                        
-                        <p class="proyecto_parrafo">
-                            Se desarrolló el diseño del logotipo y las bases de su identidad visual. El proyecto incluyó la definición de paleta de colores, tipografía y estilo gráfico, orientado a transmitir seguridad, cercanía y dinamismo en el rubro inmobiliario. Se trabajó en conjunto para asegurar que cada elemento reflejara los valores de la empresa y facilitara su aplicación en canales digitales y materiales impresos. El resultado fue una marca sólida, adaptable y lista para crecer.
-                        </p>
-                    </div>
-                </a>
-                <div class="proyectos_target">
-                    <div class="proyectos_img logo_tavo"></div>
-                    <div class="proyecto_detalles">
-                        <h3 class="proyecto_subtitulo">
-                            Servicio Técnico Tavo
-                        </h3>
-                        <p class="proyecto_parrafo">
-                            Un emprendimiento local enfocado en soluciones tecnológicas, se diseñó el logotipo y las tarjetas de presentación. El objetivo fue crear una imagen clara y funcional que represente confianza y profesionalismo en sus servicios. Se optó por un diseño sencillo pero distintivo, fácil de aplicar en distintos formatos y soportes, ideal para fortalecer su presencia en el entorno local.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div id="proyectos_contenedor" class="proyectos_contenedor"></div>
+            <div id="mostrar_mockup" class="ocultar"></div>
         </section>
-        <section id="contacto" class="contacto">
-            <h2 class="subtitulo">
-                Contacto
-            </h2>
-            <div class="targetContacto">
-                <div class="informacionContacto">
-                    <p class="subtitulo">¡Hablemos!</p>
-                     <img src="./assets/imagenes/contacto.svg" class="imgContacto" alt="">
-                    <p class="contactoIcons">
-                        <a href="https://wa.me/message/TU5QLECZNAOZA1"  target="_blank">
-                            <i class="bi bi-whatsapp contactoIcon"></i>
-                        </a>
-                        <a id="mailto" href="mailto:diegollanosrstudio@gmail.com">
-                            <i class="bi bi-envelope-plus-fill contactoIcon"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/diegollanosr" target="_blank">
-                            <i class="bi bi-linkedin contactoIcon"></i>
-                        </a>
-                    </p>
-                    <p class="textocontacto">@diegollanosrstudio</p>
-                </div>
-                <form id="formularioContacto" class="formularioContacto" action="https://formsubmit.co/diegollanosrstudio@gmail.com" method="POST">
-                    <p>
-                        <label class="formularioLabel" for="fullName">Nombre <span
-                                class="textResaltado">*</span></label>
-                        <input class="formularioInput " type="text" id="fullName" name="name" placeholder=" Nombre y Apellido"></input>
-                    </p>
-                    <p>
-                        <label class="formularioLabel" for="email">Email <span class="textResaltado">*</span></label>
-                        <input class="formularioInput " type="email" id="email" name="email"
-                            placeholder="email@contacto.com"></input>
-                    </p>
-                    <p>
-                        <label class="formularioLabel" for="phone">Teléfono</label>
-                        <input class="formularioInput" type="tel" name="phone" id="phone"
-                            placeholder="+51 927 702 257"></input>
-                    </p>
-                    <p>
-                        <label for="affair" class="formularioLabel">Asunto<span class="textResaltado">*</span></label>
-                        <input class="formularioInput " type="affair" id="affair" name="affair"
-                            placeholder="Asunto..."></input>
-                    </p>
-                    <textarea class="formularioInput " id="message" name="message" rows="4"
-                    placeholder="* Mensaje"></textarea>
-                    <button type="submit" class="formularioBoton ">Enviar</button>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://diegollanosrstudio.github.io/">
-                    <p id="mensajeError" class="mensajeError"></p>
-                </form>
-            </div>            
-        </section>    
+        <a href="https://wa.me/message/TU5QLECZNAOZA1" target="_blank" id="whatsappflotante" class="whatsappflotante">
+            <svg class="whatsappflotanteicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+                <path
+       id="path123"style="display:inline;fill:currentColor;fill-opacity:0.990148;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" d="m 68.415805,9.2703334 a 58.066957,56.87549 0 0 0 -58.06689,56.8755016 58.066957,56.87549 0 0 0 8.444926,29.36278 c -0.207119,0.215932 -0.417047,0.435802 -0.618096,0.645363 C 8.321318,106.42563 5.8089618,109.0974 5.8089618,109.30604 c 0,0.0795 0.050129,0.14479 0.1113445,0.14479 0.1091097,0 6.7525247,-4.16161 15.7357887,-9.822008 A 58.066957,56.87549 0 0 0 68.415805,123.02133 58.066957,56.87549 0 0 0 126.48271,66.145835 58.066957,56.87549 0 0 0 112.27169,28.894542 c 2.18328,-2.31838 3.50494,-4.593717 4.54775,-7.85572 0.845,-2.64326 1.07595,-5.04999 0.78918,-8.225152 -0.12615,-1.396746 -0.29363,-2.653987 -0.37203,-2.794091 -0.0258,-0.046108 -0.0648,-0.063847 -0.12077,-0.05064 -0.16772,0.039575 -0.48515,0.357536 -1.03556,1.024857 -3.34415,4.054391 -8.68603,6.840374 -15.22873,7.982655 A 58.066957,56.87549 0 0 0 68.415805,9.2703334 Z" /><path style="fill:#ffffff;fill-opacity:1;stroke-width:1.0995" d="m 35.837837,94.037866 c 0.313188,-1.079991 1.363025,-4.892785 2.332971,-8.472858 l 1.763539,-6.509231 -0.886391,-1.927122 C 36.319097,71.195791 35.656669,68.20705 35.687107,61.965194 35.735757,51.98739 39.701891,43.363056 47.164133,37.008429 69.399955,18.073054 103.53041,34.860591 102.04338,64.00155 c -1.1746,23.018642 -24.415097,37.58847 -46.116002,28.910895 -3.84083,-1.535845 -2.277312,-1.681827 -13.26274,1.238277 -3.829476,1.017925 -7.060231,1.85078 -7.179458,1.85078 -0.119227,0 0.03947,-0.883637 0.352657,-1.963636 z M 76.331724,89.197923 C 90.309146,85.017536 98.779654,71.463232 96.336204,57.187197 94.568994,46.862135 86.338796,38.028129 75.809088,35.154114 72.481329,34.245826 65.246539,34.245868 61.845475,35.154194 44.21085,39.863896 35.487875,60.275409 44.45252,75.853172 l 1.299122,2.257444 -1.366609,5.034949 c -0.751628,2.769215 -1.302915,5.098621 -1.225071,5.176466 0.07785,0.07785 2.437607,-0.472201 5.24393,-1.222322 l 5.102392,-1.36385 2.569591,1.323597 c 6.213017,3.200328 13.967978,4.019047 20.255849,2.138467 z M 73.772721,78.43986 c -5.29454,-1.723571 -9.473443,-4.246258 -13.072251,-7.891377 -5.309912,-5.378222 -9.182252,-12.24246 -9.182252,-16.276745 0,-3.157174 2.141941,-7.095358 4.358461,-8.013472 1.051493,-0.435541 3.384022,-0.241034 3.947074,0.329144 0.377458,0.382238 3.330806,7.810495 3.330806,8.377649 0,0.153467 -0.637346,1.044874 -1.416317,1.980908 -1.946429,2.338883 -1.973455,2.523665 -0.691871,4.731422 2.17518,3.747174 8.423567,9.045574 11.198434,9.495873 0.943368,0.153083 1.102026,0.04376 2.997878,-2.066175 2.362544,-2.629283 1.987307,-2.622586 6.601425,-0.117778 4.269368,2.317663 4.098144,2.155553 3.888942,3.681853 -0.716762,5.229373 -5.915118,7.736634 -11.960329,5.768698 z"
+       id="path1" />
+        </svg>
+        </a>
     </main>
     <footer class="footer">
         <div class="footer_contenedor">
@@ -310,7 +229,8 @@
         </div>
     </footer>
         <script src="./assets/js/script.js" defer></script>
-         <script src="./assets/js/formulario.js" defer></script>
+        <script src="./assets/js/datosDisenho.js" defer></script>
+        <script src="./assets/js/mockups.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>

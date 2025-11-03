@@ -1,12 +1,14 @@
 // const $body = document.getElementById('body');
 const $listaNav = document.querySelectorAll('.navegacion_ul a[href^="#"]');
 const $anhoActual = document.getElementById('anhoActual');
+const $whatsappflotante = document.getElementById('whatsappflotante')
+// const $botoncontacto = document.getElementById('boton_contacto');
 
 /* cambio de visualizacion*/
-// window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', ()=>{
+	$whatsappflotante.classList.toggle('scroll', window.scrollY > 100)
 //     $body.classList.toggle('scroll', window.scrollY > 20)
-// })
-
+})
 
 /*barra navegacion*/
 const observer = new IntersectionObserver(
