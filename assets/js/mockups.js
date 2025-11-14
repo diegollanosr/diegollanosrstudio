@@ -116,6 +116,7 @@ const printMockupContenedor = (id)=>{
 	let listaMockups = mockupsPorProyecto[id];
 	
 	const resultado = listaDisenhos.find(item => item.id === id).nombre;
+	const mensaje = listaDisenhos.find(item => item.id === id).parrafo;
 	
 	if (!listaMockups) {
 		$listamockup.innerHTML = '<p class="proyecto_subtitulo"> No hay mockups disponibles para este proyecto.</p>';
@@ -126,9 +127,7 @@ const printMockupContenedor = (id)=>{
 		<img class="logo_seleccionado ${id}" >
 		<div>
 			<p class="subtitulo">${resultado}</p>
-			<p class="discleimer"> Los diseños de mockups mostrados a continuación son imágenes referenciales que ilustran usos reales o potenciales de la marca en distintos entornos visuales.
-			<br>
-			Esta presentación no busca replicar campañas de terceros, sino documentar aplicaciones gráficas que reflejan la coherencia, versatilidad y propósito estratégico de la marca en contextos reales o simulados.
+			<p class="discleimer"> ${mensaje}
 			</p>
 		</div>
 	</div>
