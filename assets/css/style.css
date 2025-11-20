@@ -43,7 +43,6 @@ button{
     cursor: pointer;
 }
 body{
-    /* margin-top: 90px; */
     background: var(--color--background);
     font-family: var(--font-general);
 }
@@ -162,7 +161,7 @@ body{
 .inicio{
     display: flex;
     width: 100%;
-    min-height: 65vh;
+    min-height: calc(100vw / 16 * 6.5);
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -571,7 +570,6 @@ body{
 
     .inicio{
         flex-direction: column-reverse;
-        min-height: 50vh;
     }
     .servicio_target{
         max-width: 100%;
